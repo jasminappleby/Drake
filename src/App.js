@@ -1,6 +1,5 @@
 import React from 'react';
-import Artist from './components/Artist';
-import Discography from './components/Discography';
+import { Artist, Discography } from './components';
 
 function App() {
   return (
