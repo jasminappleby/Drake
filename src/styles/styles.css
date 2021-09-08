@@ -22,7 +22,7 @@ main {
     padding: 20px;
 }
 
-#img {
+.img {
     width: 200px;
     padding: 25px;
 }
@@ -32,6 +32,6 @@ main {
     font-weight: bold;
 }
 
-h2, h3, h4, p {
+h1, h2, h3, h4, p {
     font-family: 'Poppins', sans-serif;
 }
