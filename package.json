@@ -30,6 +30,7 @@
     "axios": "^0.21.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-favicon": "0.0.23",
     "react-router": "^5.2.1"
   }
 }

@@ -15,7 +15,7 @@ function App() {
     { name: 'Nothing Was The Same', img: "https://upload.wikimedia.org/wikipedia/en/4/42/Drake_-_Nothing_Was_the_Same_cover.png", release: '2013'}
   ])
 
-  function randomAlbum() { 
+  function randomAlbum(prop) { 
     let x = Math.round(album.length*Math.random())
     console.log(album[x])
     return album[x]
@@ -28,7 +28,7 @@ function App() {
       <Artist />
       <Album />
       <Discography />
-      <Lyrics />
+      <Lyrics property={randomAlbum()}/>
     </main>
   );
 }
