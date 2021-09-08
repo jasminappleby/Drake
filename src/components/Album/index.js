@@ -4,8 +4,8 @@ const Album = (prop) => {
   
     return (
       <div>
-        <img src={prop.img} alt="album thing"/> 
-        <button onClick={prop.randomAlbum}>Click me for random album pls</button>
+        <img src={prop.img} alt="album"/> 
+        <button onClick={prop.randomAlbum}>Random Album!</button>
       </div>
     );
       }
