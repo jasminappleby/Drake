@@ -10,12 +10,12 @@ const Lyrics = ({ close }) => {
                 setLyric(data);
             } catch (err) {
                 console.warn(err);
-                setLyric({setup: "SICKO MODEEEEEE"})
+                setLyric({setup: "sick mode :/"})
             }
         }
 
         giveMeLyric()
-        const stream = setInterval(giveMeLyric, 10000)
+        const stream = setInterval(giveMeLyric, 50000)
 
         return () => clearInterval(stream)
     }, [])
@@ -29,7 +29,7 @@ const Lyrics = ({ close }) => {
             <h1>SICKO MODE LYRICS:</h1>
             <p>{lyric.setup}</p>
             </>
-        : <h2>Lyrics are on their way!</h2> }
+        : <h2>Lyrics Loading...</h2> }
         </>
     )
 }
