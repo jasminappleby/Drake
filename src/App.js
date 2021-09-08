@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
+import { render } from 'react-dom';
 import { Artist, Discography, Lyrics, Album } from './components';
+import { Header } from './layout';
+
 
 function App() {
 
@@ -19,10 +22,11 @@ function App() {
   }
 
 
+
   return (
     <main>
       <Artist />
-      <Album property={randomAlbum}/>
+      <Album />
       <Discography />
       <Lyrics />
     </main>
