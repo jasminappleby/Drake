@@ -1,16 +1,7 @@
-
 import React, { useState } from 'react';
+import '../../styles/styles.css';
 
 function Album(props) {
-
-  // const [album, setAlbum] = useState([
-  //   [ 'Certified Lover Boy', ', 2021' ],
-  //   [ 'Scorpion', ', 2018'],
-  //   ['More Life', ', 2017' ],
-  //   ['Views',', 2016'],
-  //   [`If You're Reading This, It's Too Late`, ', 2015'],
-  //   ['Nothing Was The Same', ', 2013']
-  // ])
 
   const [album, setAlbum] = useState([
     { id: 1, name: 'Certified Lover Boy', img: "https://news.artnet.com/app/news-upload/2021/08/E-IU6LZXsAcioMl-1024x1024.jpeg", release: '2021' },
@@ -30,8 +21,9 @@ function Album(props) {
 
   return (
       <div> 
-        <p>{album[randomAlbum].name}</p>
-        <img src={album[randomAlbum].img}/>
+        <p>{album[randomAlbum].name}, {album[randomAlbum].release} </p>
+        <img className="img" src={album[randomAlbum].img}/>
+        <br></br>
         <button onClick={handleRandomAlbum}>Randomiser</button>
       </div>
     );
